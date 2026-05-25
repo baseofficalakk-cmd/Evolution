@@ -1,0 +1,182 @@
+{
+  "heroes": [
+    {
+      "id": "hero_001",
+      "name": "Nova",
+      "lore": "A cosmic warrior born from stardust, Nova commands the power of galaxies.",
+      "rarity": "Starter",
+      "health": 1000,
+      "speed": 6,
+      "damage": 80,
+      "attackRange": 8,
+      "attackSpeed": 0.8,
+      "portraitPath": "Heroes/Nova/Portrait",
+      "iconPath": "Heroes/Nova/Icon",
+      "modelPath": "Heroes/Nova/Model",
+      "unlockCost": 0,
+      "unlockCurrency": "Cells",
+      "colorScheme": {
+        "primaryColor": "#4A90D9",
+        "secondaryColor": "#1E3A5F",
+        "accentColor": "#7BC9F5",
+        "outlineColor": "#000000"
+      },
+      "abilities": {
+        "basic": {
+          "id": "nova_basic",
+          "name": "Star Bolt",
+          "description": "Fires a projectile dealing damage to the first enemy hit",
+          "type": "Basic",
+          "damage": 80,
+          "cooldown": 0,
+          "castRange": 10,
+          "projectileType": "Bullet",
+          "projectileSpeed": 15
+        },
+        "special": {
+          "id": "nova_special",
+          "name": "Cosmic Dash",
+          "description": "Dash forward, leaving a trail of stardust",
+          "type": "Special",
+          "cooldown": 8,
+          "castRange": 6,
+          "effectDuration": 0.5
+        },
+        "ultimate": {
+          "id": "nova_ultimate",
+          "name": "Supernova",
+          "description": "Explode dealing massive damage in an area",
+          "type": "Ultimate",
+          "damage": 400,
+          "cooldown": 45,
+          "aoeRadius": 8,
+          "vfxPath": "VFX/Nova/Supernova"
+        },
+        "passive": {
+          "id": "nova_passive",
+          "name": "Stellar Energy",
+          "description": "Every third attack deals bonus damage",
+          "type": "Passive"
+        }
+      },
+      "gameplayTips": ["Use Cosmic Dash to escape", "Save ultimate for team fights", "Position safely due to low health"]
+    },
+    {
+      "id": "hero_002",
+      "name": "Titan",
+      "lore": "An ancient guardian awakened to protect the realm from darkness.",
+      "rarity": "Starter",
+      "health": 1500,
+      "speed": 4,
+      "damage": 60,
+      "attackRange": 4,
+      "attackSpeed": 1.0,
+      "portraitPath": "Heroes/Titan/Portrait",
+      "iconPath": "Heroes/Titan/Icon",
+      "modelPath": "Heroes/Titan/Model",
+      "unlockCost": 0,
+      "unlockCurrency": "Cells",
+      "colorScheme": {
+        "primaryColor": "#8B4513",
+        "secondaryColor": "#5C3317",
+        "accentColor": "#D2691E",
+        "outlineColor": "#000000"
+      },
+      "abilities": {
+        "basic": {
+          "id": "titan_basic",
+          "name": "Stone Fist",
+          "description": "Punch dealing damage in front",
+          "type": "Basic",
+          "damage": 60,
+          "cooldown": 0,
+          "castRange": 4
+        },
+        "special": {
+          "id": "titan_special",
+          "name": "Earth Shield",
+          "description": "Gain a shield absorbing damage",
+          "type": "Special",
+          "cooldown": 12,
+          "effectDuration": 5
+        },
+        "ultimate": {
+          "id": "titan_ultimate",
+          "name": "Ground Slam",
+          "description": "Slam the ground stunning nearby enemies",
+          "type": "Ultimate",
+          "damage": 200,
+          "cooldown": 40,
+          "aoeRadius": 6,
+          "appliedEffects": ["Stun"]
+        },
+        "passive": {
+          "id": "titan_passive",
+          "name": "Rock Skin",
+          "description": "Take reduced damage from all sources",
+          "type": "Passive"
+        }
+      },
+      "gameplayTips": ["Protect your teammates", "Use shield before taking damage", "Ultimate is great for initiating"]
+    },
+    {
+      "id": "hero_003",
+      "name": "Zephyr",
+      "lore": "Master of winds, Zephyr strikes swiftly and disappears like a breeze.",
+      "rarity": "Starter",
+      "health": 800,
+      "speed": 8,
+      "damage": 70,
+      "attackRange": 6,
+      "attackSpeed": 0.6,
+      "portraitPath": "Heroes/Zephyr/Portrait",
+      "iconPath": "Heroes/Zephyr/Icon",
+      "modelPath": "Heroes/Zephyr/Model",
+      "unlockCost": 0,
+      "unlockCurrency": "Cells",
+      "colorScheme": {
+        "primaryColor": "#98FB98",
+        "secondaryColor": "#2E8B57",
+        "accentColor": "#00FF7F",
+        "outlineColor": "#000000"
+      },
+      "abilities": {
+        "basic": {
+          "id": "zephyr_basic",
+          "name": "Wind Blade",
+          "description": "Throw a wind blade at enemies",
+          "type": "Basic",
+          "damage": 70,
+          "cooldown": 0,
+          "castRange": 8,
+          "projectileSpeed": 12
+        },
+        "special": {
+          "id": "zephyr_special",
+          "name": "Gale Force",
+          "description": "Push enemies back with strong wind",
+          "type": "Special",
+          "cooldown": 10,
+          "castRange": 8,
+          "appliedEffects": ["Slow"]
+        },
+        "ultimate": {
+          "id": "zephyr_ultimate",
+          "name": "Tornado",
+          "description": "Create a tornado that follows enemies",
+          "type": "Ultimate",
+          "damage": 300,
+          "cooldown": 50,
+          "aoeRadius": 5
+        },
+        "passive": {
+          "id": "zephyr_passive",
+          "name": "Swift Winds",
+          "description": "Move faster when out of combat",
+          "type": "Passive"
+        }
+      },
+      "gameplayTips": ["Kite enemies using your speed", "Use bushes for ambushes", "Escape with Gale Force when needed"]
+    }
+  ]
+}
